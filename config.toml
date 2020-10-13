@@ -1,7 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "nl-nl"
 title = "HUGO Analytics"
-theme = "timer"
+theme = "timer-hugo"
 
 # Site Menus
 [menu]
