@@ -1,3 +1,95 @@
 baseURL = "http://example.org/"
 languageCode = "nl-nl"
 title = "HUGO Analytics"
+theme = "timer"
+
+# Site Menus
+[menu]
+    # Navbar Menus
+    [[menu.nav]]
+        name    = "About"
+        url     = "about"
+        weight  = 2
+    [[menu.nav]]
+        name    = "Projects"
+        url     = "projects"
+        weight  = 3
+    [[menu.nav]]
+        name    = "Contact"
+        url     = "contact"
+        weight  = 4
+
+# Site Params
+[params]
+    home = "Home"
+    logo = "images/logo.png"
+    dateFormat = "6-1-2006"
+    # Meta data
+    description = "HUGO. Analytics is een data analytics en consultancy bedrijf"
+    author = "HUGO."
+    # Google Analitycs
+    googleAnalitycsID = "Your ID"
+
+    # Banner Section
+    [params.banner]
+        enable  = true
+        bgImage = "images/lake-nogwat.jpg"
+        heading = "HI, Ik ben HUGO. & mijn passie is data"
+        description = "Met meer dan 15 jaar ervaring in data gedreven projecten, in rollen als data analist, data specialist en data visualisatie engineer. Maak kennis met mijn werk."
+        btn     = true
+        btnText = "Meer"
+        btnURL  = "about"
+        [[params.banner.flipText]]
+            title   = "ANALYSEREN"
+        [[params.banner.flipText]]
+            title   = "MODELLEREN"
+        [[params.banner.flipText]]
+            title   = "VISUALISEREN"
+        [[params.banner.flipText]]
+            title   = "INTERPRETEREN"
+
+    # Homepage About Section
+    [params.about]
+        enable  = true
+        title   = "ABOUT ME"
+        content = "Ik ben Hugo. Ruim 15 jaar geleden dook ik in de wereld van data. Eerst als analist en ontwerper in de ongestructureerde data (je weet wel, documenten) en de laatste jaren richt ik mij op data in meer gestructureerde vorm (databases en tabellen). <br><br> Heerlijk vind ik het om een berg ogenschijnlijk onsamenhangende gegevens door te spitten om er vervolgens inzichten uit te kunnen halen. De resultaten zijn niet altijd even pretty, maar zorgen er wél voor dat het goede gesprek op gang komt. `Waarom zien we deze trend?` en `Wat zijn eigenlijk de effecten van de aanschaf van deze machine?` <br><br> Het samenbrengen van harde feiten uit de data en de ervaring van medewerkers op de werkvloer, dát is de meerwaarde van HUGO Analytics."
+        image   = "images/about/about.jpg"
+
+    # Call to Action
+    [params.cta]
+        enable  = true
+        title   = "Huur mij in als freelancer"
+        content = "Neem voor mijn beschikbaarheid contact op via het contactformulier"
+        btnText = "Contact"
+        btnURL  = "/contact"
+
+    # Portfolio Section On Homepage
+    [params.portfolio]
+        enable  = true
+        title   = "Recente projecten"
+        subtitle= "Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus."
+
+    [params.footer]
+        [[params.footer.socialIcon]]
+            icon = "ion-social-facebook"
+            url = "#"
+
+        [[params.footer.socialIcon]]
+            icon = "ion-social-instagram"
+            url = "#"
+
+        [[params.footer.socialIcon]]
+            icon = "ion-social-linkedin"
+            url = "https://www.linkedin.com/in/hugojanssen/"
+
+        [[params.footer.socialIcon]]
+            icon = "ion-social-github"
+            url = "https://github.com/nl-hugo"
+
+        [[params.footer.socialIcon]]
+            icon = "ion-social-skype"
+            url = "#"
+
+        [[params.footer.socialIcon]]
+            icon = "ion-social-whatsapp"
+            url = "#"
